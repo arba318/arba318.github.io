@@ -1,89 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Apple Rose Alce</title>
+
   <style>
+    :root {
+      --navy: #11133E;
+      --blue: #1E498F;
+      --teal: #219197;
+      --text: #222222;
+      --muted: #666666;
+      --line: #e5e5e5;
+      --bg: #ffffff;
+      --soft: #f7f9fb;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #222;
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
     }
+
+    header {
+      margin-bottom: 40px;
+    }
+
     h1 {
-      margin-bottom: 0;
-      color: #11133E;
+      margin: 0;
+      color: var(--navy);
+      font-size: 42px;
+      line-height: 1.2;
     }
-    h2 {
-      margin-top: 32px;
-      color: #1E498F;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 4px;
+
+    .subtitle {
+      margin-top: 12px;
+      font-size: 18px;
+      color: #444444;
     }
-    a {
-      color: #219197;
+
+    .links {
+      margin-top: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 9px 14px;
+      border: 1px solid var(--teal);
+      border-radius: 8px;
+      color: var(--teal);
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .button:hover {
+      background: var(--teal);
+      color: #ffffff;
       text-decoration: none;
     }
+
+    section {
+      margin-top: 34px;
+    }
+
+    h2 {
+      color: var(--blue);
+      font-size: 28px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    p {
+      font-size: 17px;
+      margin-top: 0;
+    }
+
+    .card {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-top: 14px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      background: #eef6f7;
+      color: var(--navy);
+      border: 1px solid #d8ecee;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 22px;
+      font-size: 16px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: var(--teal);
+      text-decoration: none;
+    }
+
     a:hover {
       text-decoration: underline;
     }
-    .subtitle {
-      margin-top: 4px;
-      color: #555;
-    }
-    .section {
-      margin-bottom: 20px;
+
+    footer {
+      margin-top: 48px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Apple Rose Alce</h1>
-  <p class="subtitle">
-    PhD Student, TIGP Artificial Intelligence of Things Program<br>
-    Academia Sinica and National Taiwan University
-  </p>
+  <header>
+    <h1>Apple Rose Alce</h1>
 
-  <h2>About</h2>
-  <p>
-    I am a first-year PhD student in the TIGP Artificial Intelligence of Things program,
-    jointly affiliated with Academia Sinica and National Taiwan University. My research
-    background is in applied embedded and AIoT systems, particularly IoT-based monitoring
-    and decision-support systems for smart agriculture and environmental sensing.
-  </p>
+    <p class="subtitle">
+      PhD Student, TIGP Artificial Intelligence of Things Program<br />
+      Academia Sinica and National Taiwan University
+    </p>
 
-  <h2>Research Interests</h2>
-  <p>
-    Embedded Systems, Internet of Things, Artificial Intelligence of Things, Edge Computing,
-    Applied AI, Smart Agriculture, Environmental Sensing, Resource-Constrained AIoT Systems.
-  </p>
+    <div class="links">
+      <a class="button" href="https://scholar.google.com/citations?hl=en&user=yhtYezIAAAAJ&view_op=list_works" target="_blank">
+        Google Scholar
+      </a>
 
-  <h2>Research Direction</h2>
-  <p>
-    My current research interest is in energy-aware embedded intelligence for
-    resource-constrained AIoT systems, with emphasis on sensing, local inference,
-    communication, and deployment under real field constraints.
-  </p>
+      <a class="button" href="Apple_Rose_Alce_CV.pdf" target="_blank">
+        CV
+      </a>
 
-  <h2>Selected Publications</h2>
-  <p>
-    Please see my Google Scholar profile for my publication list:
-    <a href="https://scholar.google.com/citations?hl=en&user=yhtYezIAAAAJ&view_op=list_works" target="_blank">
-      Google Scholar Profile
-    </a>.
-  </p>
+      <a class="button" href="mailto:your.email@example.com">
+        Email
+      </a>
+    </div>
+  </header>
 
-  <h2>Contact</h2>
-  <p>
-    Email: [your email address]<br>
-    Google Scholar:
-    <a href="https://scholar.google.com/citations?hl=en&user=yhtYezIAAAAJ&view_op=list_works" target="_blank">
-      Profile
-    </a>
-  </p>
+  <section>
+    <h2>About</h2>
+
+    <p>
+      I am a first year PhD student in the TIGP Artificial Intelligence of Things program,
+      jointly offered by Academia Sinica and National Taiwan University. My research background
+      is in applied embedded and AIoT systems, particularly IoT based monitoring and
+      decision support systems for smart agriculture and environmental sensing.
+    </p>
+  </section>
+
+  <section>
+    <h2>Research Focus</h2>
+
+    <div class="card">
+      <p>
+        My current research interest is in energy aware embedded intelligence for
+        resource constrained AIoT systems. I am particularly interested in how
+        microcontroller based field nodes can adaptively schedule sensing, local inference,
+        and communication under energy, memory, latency, and bandwidth limitations.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research Interests</h2>
+
+    <div class="tags">
+      <span class="tag">Embedded Systems</span>
+      <span class="tag">Internet of Things</span>
+      <span class="tag">AIoT</span>
+      <span class="tag">Edge Computing</span>
+      <span class="tag">Applied AI</span>
+      <span class="tag">TinyML</span>
+      <span class="tag">Smart Agriculture</span>
+      <span class="tag">Environmental Sensing</span>
+      <span class="tag">Resource Constrained Systems</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected Publications</h2>
+
+    <ul>
+      <li>
+        <strong>
+          <a href="https://doi.org/10.1109/ACDSA67686.2026.11468017" target="_blank">
+            Development of a Low Cost LoRa Based System for Particulate Matter 2.5 Data Acquisition
+          </a>
+        </strong>.
+        2026. International Conference on Artificial Intelligence, Computer, Data Sciences and Applications.
+      </li>
+
+      <li>
+        <strong>
+          <a href="https://doi.org/10.12928/telkomnika.v24i2.27557" target="_blank">
+            Low Cost ESP32 Based Sound Data Acquisition System with MATLAB Integration for Real Time Noise Monitoring
+          </a>
+        </strong>.
+        2026. TELKOMNIKA, 24(2), 599 to 607.
+      </li>
+
+      <li>
+        <strong>
+          <a href="https://doi.org/10.1007/978-3-032-10824-1_28" target="_blank">
+            Performance Analysis of YOLO Based Architecture for Water Level Monitoring
+          </a>
+        </strong>.
+        2026. Novel and Intelligent Digital Systems: Proceedings of NiDS 2025, 361 to 372.
+      </li>
+
+      <li>
+        <strong>
+          <a href="https://doi.org/10.1007/978-3-032-10824-1_8" target="_blank">
+            Deep Learning Based Forecasting of Environmental Noise in Campus Buildings Using Bi LSTM and IoT Integration
+          </a>
+        </strong>.
+        2026. Novel and Intelligent Digital Systems: Proceedings of NiDS 2025, 100 to 111.
+      </li>
+
+      <li>
+        <strong>
+          <a href="https://doi.org/10.1007/978-3-032-06634-3_6" target="_blank">
+            My.BoardHub: Development of a Single Board Computer Based Security System Using Artificial Intelligence of Things for Boarding Houses
+          </a>
+        </strong>.
+        2025. Novel and Intelligent Digital Systems: Proceedings of NiDS 2025, 59 to 70.
+      </li>
+
+      <li>
+        <strong>
+          <a href="https://doi.org/10.3390/informatics12020041" target="_blank">
+            Are We Inclusive? Accessibility Challenges in Philippine E Government Websites
+          </a>
+        </strong>.
+        2025. Informatics, 12(2), 41.
+      </li>
+
+      <li>
+        <strong>
+          <a href="https://doi.org/10.1016/j.procs.2024.03.184" target="_blank">
+            Automated Safe AWD Rice Irrigation Scheduling Using Low Power WAN Technology
+          </a>
+        </strong>.
+        2024. Procedia Computer Science, 234, 1769 to 1776.
+      </li>
+
+      <li>
+        <strong>
+          <a href="https://doi.org/10.1016/j.procs.2024.03.175" target="_blank">
+            Design and Development of a University Outdoor Air Quality Monitoring System
+          </a>
+        </strong>.
+        2024. Procedia Computer Science, 234, 1697 to 1704.
+      </li>
+
+      <li>
+        <strong>
+          <a href="https://doi.org/10.1007/978-3-031-73344-4_8" target="_blank">
+            Development of an Image Based Reverse Vending Machine Using Raspberry Pi
+          </a>
+        </strong>.
+        2024. Novel and Intelligent Digital Systems: Proceedings of NiDS 2024, 102 to 112.
+      </li>
+    </ul>
+
+    <p>
+       Select publication list:
+      <a href="https://scholar.google.com/citations?hl=en&user=yhtYezIAAAAJ&view_op=list_works" target="_blank">
+        Google Scholar Profile
+      </a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+
+    <p>
+      Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br />
+      Google Scholar:
+      <a href="https://scholar.google.com/citations?hl=en&user=yhtYezIAAAAJ&view_op=list_works" target="_blank">
+        Profile
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    Last updated: April 2026
+  </footer>
 
 </body>
 </html>
