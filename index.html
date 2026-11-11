@@ -3,124 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Apple Rose Alce &#32645;&#24515;&#36637;</title>
+  <meta
+    name="description"
+    content="Academic profile of Apple Rose Buhisan Alce, a PhD student in Artificial Intelligence of Things working on embedded systems, edge intelligence, and intelligent sensing."
+  />
+  <title>Apple Rose Buhisan Alce | AIoT Researcher</title>
 
   <style>
     :root {
       --navy: #11133e;
       --blue: #1e498f;
-      --teal: #219197;
+      --teal: #167f86;
       --text: #222222;
-      --muted: #666666;
-      --line: #e5e5e5;
+      --muted: #626b74;
+      --line: #e2e7eb;
+      --soft: #f4f8f9;
       --bg: #ffffff;
     }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      max-width: 920px;
+      max-width: 980px;
       margin: 0 auto;
       padding: 48px 24px;
       background: var(--bg);
       color: var(--text);
-      font-family:
-        Arial,
-        "PingFang TC",
-        "Microsoft JhengHei",
-        Helvetica,
-        sans-serif;
-      line-height: 1.65;
+      font-family: Arial, "PingFang TC", "Microsoft JhengHei", Helvetica, sans-serif;
+      line-height: 1.6;
     }
 
     header {
-      margin-bottom: 40px;
+      margin-bottom: 34px;
     }
 
     h1 {
       margin: 0;
       color: var(--navy);
-      font-size: 42px;
-      line-height: 1.2;
+      font-size: clamp(2.25rem, 6vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+    }
+
+    .name-alt {
+      color: var(--muted);
+      font-size: 0.52em;
+      font-weight: 500;
+      letter-spacing: 0;
+      white-space: nowrap;
     }
 
     .subtitle {
-      margin-top: 12px;
-      color: #444444;
-      font-size: 18px;
+      margin: 12px 0 0;
+      color: #3f4850;
+      font-size: 1.05rem;
+    }
+
+    .focus-line {
+      margin: 8px 0 0;
+      color: var(--blue);
+      font-size: 1.04rem;
+      font-weight: 700;
     }
 
     .links {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 22px;
+      gap: 9px;
+      margin-top: 20px;
     }
 
     .button {
       display: inline-block;
-      padding: 9px 14px;
+      padding: 8px 13px;
       border: 1px solid var(--teal);
       border-radius: 8px;
       color: var(--teal);
-      font-size: 15px;
+      font-size: 0.92rem;
+      font-weight: 600;
       text-decoration: none;
     }
 
-    .button:hover {
+    .button:hover,
+    .button:focus-visible {
       background: var(--teal);
       color: #ffffff;
+      outline: none;
       text-decoration: none;
     }
 
     section {
-      margin-top: 34px;
+      margin-top: 32px;
     }
 
     h2 {
-      margin-bottom: 12px;
-      padding-bottom: 8px;
+      margin: 0 0 12px;
+      padding-bottom: 7px;
       border-bottom: 1px solid var(--line);
       color: var(--blue);
-      font-size: 28px;
+      font-size: 1.65rem;
+      line-height: 1.25;
     }
 
-    .publication-heading {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      color: #000000;
-      font-size: 1.15rem;
-      font-weight: 700;
-      text-transform: uppercase;
+    h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 1.1rem;
     }
 
     p {
-      margin-top: 0;
-      font-size: 17px;
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .section-note {
+      margin: -3px 0 15px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-style: italic;
     }
 
     .tags {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 12px;
     }
 
     .tag {
       padding: 6px 10px;
-      border: 1px solid #d8ecee;
+      border: 1px solid #d4e8ea;
       border-radius: 999px;
       background: #eef6f7;
       color: var(--navy);
-      font-size: 14px;
+      font-size: 0.88rem;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .panel {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--soft);
     }
 
     ul {
-      padding-left: 22px;
-      font-size: 16px;
+      margin: 0;
+      padding-left: 21px;
     }
 
     li {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    .compact-list {
+      font-size: 0.97rem;
+    }
+
+    .publication-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .publication-list li {
+      margin-bottom: 14px;
+      padding-left: 3.7rem;
+      position: relative;
+    }
+
+    .year {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--teal);
+      font-weight: 700;
+    }
+
+    .venue {
+      color: var(--muted);
+      font-size: 0.94rem;
     }
 
     a {
@@ -128,371 +203,200 @@
       text-decoration: none;
     }
 
-    a:hover {
+    a:hover,
+    a:focus-visible {
       text-decoration: underline;
     }
 
+    details {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #ffffff;
+    }
+
+    summary {
+      padding: 13px 16px;
+      color: var(--navy);
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    details[open] summary {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .details-body {
+      padding: 16px 18px;
+    }
+
+    .details-body li {
+      margin-bottom: 13px;
+    }
+
     footer {
-      margin-top: 48px;
-      padding-top: 18px;
+      margin-top: 46px;
+      padding-top: 17px;
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 14px;
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 720px) {
+      body {
+        padding: 32px 18px;
+      }
+
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+
+      .publication-list li {
+        padding-left: 0;
+      }
+
+      .year {
+        position: static;
+        display: block;
+        margin-bottom: 2px;
+      }
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Apple Rose Alce &#32645;&#24515;&#36637;</h1>
-
+    <h1>Apple Rose Buhisan Alce <span class="name-alt">&#32645;&#24515;&#36637;</span></h1>
     <p class="subtitle">
-      PhD-2 Student, TIGP Artificial Intelligence of Things (AIoT) Program<br />
-      Academia Sinica and National Taiwan University<br />
-      Taipei City, Taiwan
+      Second-year PhD student, TIGP Artificial Intelligence of Things Program<br />
+      Academia Sinica and National Taiwan University | Taipei, Taiwan
     </p>
+    <p class="focus-line">Artificial Intelligence of Things | Embedded Systems | Edge Intelligence</p>
 
-    <div class="links">
-      <a
-        class="button"
-        href="https://scholar.google.com/citations?hl=en&user=yhtYezIAAAAJ&view_op=list_works"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Google Scholar
-      </a>
-
-      <a
-        class="button"
-        href="https://www.linkedin.com/in/apple-rose-alce-1520/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        LinkedIn
-      </a>
-    </div>
+    <nav class="links" aria-label="Academic profiles">
+      <a class="button" href="https://scholar.google.com/citations?user=yhtYezIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      <a class="button" href="https://orcid.org/0000-0001-6672-8772" target="_blank" rel="noopener noreferrer">ORCID</a>
+      <a class="button" href="https://www.scopus.com/pages/feedback/author/review-profile?authorIds=58549914600" target="_blank" rel="noopener noreferrer">Scopus</a>
+      <a class="button" href="https://github.com/arba318" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="button" href="https://www.linkedin.com/in/apple-rose-alce-1520/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>Research Background</h2>
+  <main>
+    <section>
+      <h2>Research Areas</h2>
+      <div class="tags">
+        <span class="tag">Embedded Systems and Microcontrollers</span>
+        <span class="tag">Edge Sensing, Control, and Automation</span>
+        <span class="tag">Edge Computer Vision</span>
+        <span class="tag">Low-Power Wireless Sensing</span>
+        <span class="tag">Environmental and Smart-City Monitoring</span>
+        <span class="tag">Time-Series Forecasting</span>
+        <span class="tag">Accessible and Human-Centered Systems</span>
+      </div>
+    </section>
 
-    <div class="tags">
-      <span class="tag">Microcontrollers</span>
-      <span class="tag">Edge and IoT Sensing, Control, and Automation</span>
-      <span class="tag">Edge Computer Vision</span>
-      <span class="tag">Environmental Sensing</span>
-    </div>
-  </section>
+    <section class="two-column" aria-label="Education and academic experience">
+      <div class="panel">
+        <h3>Education</h3>
+        <ul class="compact-list">
+          <li><strong>PhD in Artificial Intelligence of Things</strong><br />TIGP, Academia Sinica and NTU, Taiwan | 2025-present</li>
+          <li><strong>MS in Computer Applications</strong><br />MSU-IIT | 2018-2020</li>
+          <li><strong>BS in Electronics and Computer Technology</strong><br />Major in Embedded Systems, MSU-IIT | 2013-2017</li>
+        </ul>
+      </div>
 
-  <section>
-    <h2>Education</h2>
+      <div class="panel">
+        <h3>Academic Experience</h3>
+        <ul class="compact-list">
+          <li><strong>Faculty Member</strong><br />Mindanao State University - Iligan Institute of Technology | 2020-2025</li>
+          <li><strong>Administrative Role</strong><br />MSU-IIT | 2017</li>
+        </ul>
+      </div>
+    </section>
 
-    <ul>
-      <li>
-        <strong>MS in Computer Applications</strong><br />
-        Mindanao State University &ndash; Iligan Institute of Technology<br />
-        2018 to 2020
-      </li>
+    <section>
+      <h2>Selected Research and Project Experience</h2>
+      <ul class="compact-list">
+        <li><strong>Safe AWD rice irrigation:</strong> sensing, LPWAN communication, scheduling, SMS alerts, and IoT visualization.</li>
+        <li><strong>Smart-campus noise monitoring:</strong> ESP32 acquisition, Kalman filtering, and Bi-LSTM forecasting.</li>
+        <li><strong>Pedestrian safety:</strong> technology review, traffic-incident analysis, design thinking, and a YOLOv8 warning concept.</li>
+        <li><strong>Environmental sensing:</strong> low-cost air-quality and PM2.5 acquisition using scalable wireless architectures.</li>
+      </ul>
+    </section>
 
-      <li>
-        <strong>
-          BS in Electronics and Computer Technology, Major in Embedded Systems
-        </strong><br />
-        Mindanao State University &ndash; Iligan Institute of Technology<br />
-        2013 to 2017
-      </li>
-    </ul>
-  </section>
+    <section>
+      <h2>Research Platforms and Methods</h2>
+      <p><strong>Platforms:</strong> ESP32, Raspberry Pi, NVIDIA Jetson Orin Nano, environmental sensors, and local/cloud data logging.</p>
+      <p><strong>Methods:</strong> LoRa and LPWAN, YOLO-based computer vision, Bi-LSTM, Kalman filtering, and MATLAB-supported analysis.</p>
+    </section>
 
-  <section>
-    <h2>Experience</h2>
+    <section>
+      <h2>Accepted Conference Papers from Prior Research</h2>
+      <p class="section-note">Prior MSU-IIT research accepted for 2026 conferences.</p>
+      <details>
+        <summary>View 14 accepted conference papers</summary>
+        <div class="details-body">
+          <ol class="compact-list">
+            <li><strong>BantayDagat: Development and preliminary field evaluation of an edge-based weather monitoring and early warning system for small-scale fishermen.</strong> SysCom 2026, Taichung, Taiwan.</li>
+            <li><strong>Development and evaluation of an offline edge AI prototype for preliminary visual screening of Huanglongbing-consistent symptoms in Philippine calamansi.</strong> TAIIS 2026, Taichung, Taiwan.</li>
+            <li><strong>Computational approaches, evidence maturity, and research gaps in bell-pepper disease and pest monitoring: A systematic literature review.</strong> EUSPN 2026, Almaty, Kazakhstan.</li>
+            <li><strong>Design and development of a MobileNetV3-based rice tungro disease detection model for Raspberry Pi 5 edge.</strong> EUSPN 2026, Almaty, Kazakhstan.</li>
+            <li><strong>AvianTech: An edge-AI IoT architecture for real-time multimodal visual-acoustic avian biodiversity monitoring.</strong> EUSPN 2026, Almaty, Kazakhstan.</li>
+            <li><strong>Embedded IoT-based real-time room-level energy monitoring, load control and automated billing system.</strong> IEEE ICOCO 2026, Langkawi, Malaysia.</li>
+            <li><strong>An intelligent integrated work and financial planning decision support system for higher education institutions.</strong> NiDS 2026, Athens, Greece.</li>
+            <li><strong>TREON: An augmented-reality smart mirror for virtual lipstick try-on.</strong> NiDS 2026, Athens, Greece.</li>
+            <li><strong>Bridging the tungro gap: A systematic literature review of edge-optimized deep learning for rice disease detection.</strong> NiDS 2026, Athens, Greece.</li>
+            <li><strong>Development and evaluation of a wearable headband-based ASL letter-recognition prototype: A pilot feasibility, usability, and acceptance study.</strong> NiDS 2026, Athens, Greece.</li>
+            <li><strong>IoT-based CO<sub>2</sub> monitoring for sustainable indoor and outdoor environments.</strong> ICUNSSI 2026, Iligan City, Philippines.</li>
+            <li><strong>Geo-Goat: Evaluation of a LoRaWAN-enabled geofencing collar for smallholder goat monitoring.</strong> EECSI 2026, Yogyakarta, Indonesia.</li>
+            <li><strong>Design and development of a YOLO-based water-level monitoring system on NVIDIA Jetson Orin Nano.</strong> ICITCOM 2026, Yogyakarta, Indonesia.</li>
+            <li><strong>Bunchy top virus detection from UAV imagery using DeepLabv3+ with MobileNetV2: A semantic segmentation approach.</strong> ICCCE 2026, Bali, Indonesia.</li>
+          </ol>
+        </div>
+      </details>
+    </section>
 
-    <ul>
-      <li>
-        <strong>Faculty</strong><br />
-        Mindanao State University &ndash; Iligan Institute of Technology<br />
-        2020 to 2025
-      </li>
+    <section>
+      <h2>Selected Publications from Prior Research</h2>
+      <ul class="publication-list">
+        <li><span class="year">2026</span><a href="https://doi.org/10.1016/j.procs.2026.07.005" target="_blank" rel="noopener noreferrer"><strong>Smart noise monitoring and forecasting in academic environments: An IoT-based evaluation with Kalman filtering and Bi-LSTM toward a smart campus.</strong></a><br /><span class="venue"><em>Procedia Computer Science, 284</em>, 287-294.</span></li>
+        <li><span class="year">2026</span><a href="https://doi.org/10.1016/j.procs.2026.07.006" target="_blank" rel="noopener noreferrer"><strong>From problem analysis to design thinking: Developing the SWiPS system for urban pedestrian safety.</strong></a><br /><span class="venue"><em>Procedia Computer Science, 284</em>, 295-301.</span></li>
+        <li><span class="year">2026</span><a href="https://doi.org/10.1016/j.procs.2026.07.109" target="_blank" rel="noopener noreferrer"><strong>BirdNET in avian diversity monitoring: Capabilities and challenges.</strong></a><br /><span class="venue"><em>Procedia Computer Science, 284</em>, 1215-1223.</span></li>
+        <li><span class="year">2026</span><a href="https://doi.org/10.1007/978-3-032-10824-1_28" target="_blank" rel="noopener noreferrer"><strong>Performance analysis of YOLO-based architecture for water-level monitoring.</strong></a><br /><span class="venue"><em>Novel and Intelligent Digital Systems Conferences</em>, 361-372.</span></li>
+        <li><span class="year">2026</span><a href="https://doi.org/10.12928/TELKOMNIKA.v24i2.27557" target="_blank" rel="noopener noreferrer"><strong>Low-cost ESP32-based sound data-acquisition system with MATLAB integration for real-time noise monitoring.</strong></a><br /><span class="venue"><em>TELKOMNIKA, 24</em>(2), 599-607.</span></li>
+        <li><span class="year">2026</span><a href="https://doi.org/10.1109/ACDSA67686.2026.11468017" target="_blank" rel="noopener noreferrer"><strong>Development of a low-cost LoRa-based system for particulate matter 2.5 data acquisition.</strong></a><br /><span class="venue">International Conference on Artificial Intelligence, Computer, Data Sciences and Applications, 1-7.</span></li>
+        <li><span class="year">2026</span><a href="https://doi.org/10.1007/978-3-032-06634-3_6" target="_blank" rel="noopener noreferrer"><strong>My.BoardHub: Development of a single-board-computer security system using artificial intelligence of things for boarding houses.</strong></a><br /><span class="venue"><em>Novel and Intelligent Digital Systems Conferences</em>, 59-70.</span></li>
+        <li><span class="year">2025</span><a href="https://aisel.aisnet.org/pacis2025/iot_smartcity/iot_smartcity/7/" target="_blank" rel="noopener noreferrer"><strong>ICT-enabled technologies for pedestrian safety: A scoping review.</strong></a><br /><span class="venue">PACIS 2025 Proceedings, Article 7.</span></li>
+        <li><span class="year">2025</span><a href="https://doi.org/10.3390/informatics12020041" target="_blank" rel="noopener noreferrer"><strong>Are we inclusive? Accessibility challenges in Philippine e-government websites.</strong></a><br /><span class="venue"><em>Informatics, 12</em>(2), Article 41.</span></li>
+        <li><span class="year">2024</span><a href="https://doi.org/10.1016/j.procs.2024.03.184" target="_blank" rel="noopener noreferrer"><strong>Automated safe AWD rice irrigation scheduling using low-power WAN technology.</strong></a><br /><span class="venue"><em>Procedia Computer Science, 234</em>, 1769-1776.</span></li>
+        <li><span class="year">2024</span><a href="https://doi.org/10.1007/978-3-031-73344-4_8" target="_blank" rel="noopener noreferrer"><strong>Development of an image-based reverse vending machine using Raspberry Pi.</strong></a><br /><span class="venue"><em>Novel and Intelligent Digital Systems Conferences</em>, 102-112.</span></li>
+        <li><span class="year">2024</span><a href="https://doi.org/10.1016/j.procs.2024.03.175" target="_blank" rel="noopener noreferrer"><strong>Design and development of a university outdoor air-quality monitoring system.</strong></a><br /><span class="venue"><em>Procedia Computer Science, 234</em>, 1697-1704.</span></li>
+        <li><span class="year">2023</span><a href="https://doi.org/10.14569/IJACSA.2023.0140726" target="_blank" rel="noopener noreferrer"><strong>Optimizing drying efficiency through an IoT-based direct solar-dryer system: Integration of web data logger and SMS notification.</strong></a><br /><span class="venue"><em>International Journal of Advanced Computer Science and Applications, 14</em>(7), 233-240.</span></li>
+        <li><span class="year">2023</span><a href="https://doi.org/10.1007/978-3-031-44097-7_17" target="_blank" rel="noopener noreferrer"><strong>Exploring smart-city analytical framework: Evidence from select case studies.</strong></a><br /><span class="venue"><em>Novel and Intelligent Digital Systems Conferences</em>, 164-175.</span></li>
+      </ul>
+    </section>
 
-      <li>
-        <strong>Administrative Role</strong><br />
-        Mindanao State University &ndash; Iligan Institute of Technology<br />
-        2017
-      </li>
-    </ul>
-  </section>
+    <section>
+      <h2>Prior Funded Research Projects</h2>
+      <ul class="compact-list">
+        <li><strong>2024:</strong> Accessibility evaluation of municipal websites in Northern Mindanao. MSU-IIT internally funded.</li>
+        <li><strong>2024:</strong> my.BoardHub smart boarding-house management information system. Research lead; MSU-IIT internally funded.</li>
+        <li><strong>2023:</strong> Reverse-vending machine with an integrated campus rewards system. Research lead; MSU-IIT internally funded.</li>
+        <li><strong>2022-2023:</strong> Microcontroller-based water-level and soil-moisture monitoring with rice-irrigation scheduling. Research lead; MSU-IIT internally funded.</li>
+        <li><strong>2022:</strong> Empirical survey of smart-campus definitions, frameworks, and implementation. Research lead; MSU-IIT internally funded.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Selected Research Papers</h2>
+    <section>
+      <h2>Contact</h2>
+      <p>
+        <a href="mailto:d14949006@ntu.edu.tw">d14949006@ntu.edu.tw</a>
+        &nbsp;|&nbsp;
+        <a href="mailto:arbalce.25@gmail.com">arbalce.25@gmail.com</a>
+      </p>
+    </section>
+  </main>
 
-    <h3 class="publication-heading">Journal Papers</h3>
-
-    <ul>
-      <li>
-        <strong>
-          <a
-            href="https://doi.org/10.12928/telkomnika.v24i2.27557"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Low-Cost ESP32-Based Sound Data Acquisition System with MATLAB
-            Integration for Real-Time Noise Monitoring
-          </a>
-        </strong>.
-        2026.
-        <em>
-          TELKOMNIKA (Telecommunication Computing Electronics and Control)
-        </em>,
-        Vol. 24, No. 2, pp. 599&ndash;607.
-      </li>
-
-      <li>
-        <strong>
-          <a
-            href="https://doi.org/10.3390/informatics12020041"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Are We Inclusive? Accessibility Challenges in Philippine
-            E-Government Websites
-          </a>
-        </strong>.
-        2025. <em>Informatics</em>, Vol. 12, No. 2, Article 41.
-      </li>
-
-      <li>
-        <strong>
-          <a
-            href="https://doi.org/10.14569/IJACSA.2023.0140726"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Optimizing Drying Efficiency Through an IoT-Based Direct Solar
-            Dryer System: Integration of Web Data Logger and SMS Notification
-          </a>
-        </strong>.
-        2023.
-        <em>
-          International Journal of Advanced Computer Science and Applications
-          (IJACSA)
-        </em>,
-        Vol. 14, No. 7.
-      </li>
-    </ul>
-
-    <h3 class="publication-heading">Conference Papers</h3>
-
-    <ul>
-      <li>
-        <strong>
-          <a
-            href="https://doi.org/10.1016/j.procs.2026.07.005"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Smart Noise Monitoring and Forecasting in Academic Environments:
-            An IoT-Based Evaluation with Kalman Filtering and Bi-LSTM Toward a
-            Smart Campus
-          </a>
-        </strong>.
-        2026. The Eighth Information Systems International Conference
-        (ISICO 2025), <em>Procedia Computer Science</em>, Vol. 284,
-        pp. 287&ndash;294.
-      </li>
-
-      <li>
-        <strong>
-          <a
-            href="https://doi.org/10.1016/j.procs.2026.07.006"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            From Problem Analysis to Design Thinking: Developing the SWiPS
-            System for Urban Pedestrian Safety
-          </a>
-        </strong>.
-        2026. The Eighth Information Systems International Conference
-        (ISICO 2025), <em>Procedia Computer Science</em>, Vol. 284,
-        pp. 295&ndash;301.
-      </li>
-
-      <li>
-        <strong>
-          <a
-            href="https://doi.org/10.1109/ACDSA67686.2026.11468017"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Development of a Low-Cost LoRa-Based System for Particulate Matter
-            2.5 Data Acquisition
-          </a>
-        </strong>.
-        2026. International Conference on Artificial Intelligence, Computer,
-        Data Sciences and Applications (ACDSA).
-      </li>
-
-      <li>
-        <strong>
-          <a
-            href="https://doi.org/10.1007/978-3-032-10824-1_28"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Performance Analysis of YOLO-Based Architecture for Water Level
-            Monitoring
-          </a>
-        </strong>.
-        2026.
-        <em>
-          Novel and Intelligent Digital Systems: Proceedings of the 5th
-          International Conference (NiDS 2025)
-        </em>,
-        Lecture Notes in Networks and Systems, Vol. 1707,
-        pp. 361&ndash;372.
-      </li>
-
-      <li>
-        <strong>
-          <a
-            href="https://doi.org/10.1007/978-3-032-06634-3_6"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            My.BoardHub: Development of a Single-Board Computer-Based Security
-            System Using Artificial Intelligence of Things for Boarding Houses
-          </a>
-        </strong>.
-        2026.
-        <em>
-          Novel and Intelligent Digital Systems: Proceedings of the 5th
-          International Conference (NiDS 2025)
-        </em>,
-        Lecture Notes in Networks and Systems, Vol. 1644,
-        pp. 59&ndash;70.
-      </li>
-
-      <li>
-        <strong>
-          <a
-            href="https://aisel.aisnet.org/pacis2025/iot_smartcity/iot_smartcity/7/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ICT-Enabled Technologies for Pedestrian Safety: A Scoping Review
-          </a>
-        </strong>.
-        2025. 29th Pacific Asia Conference on Information Systems
-        (PACIS 2025), Track 4: IoT, Smart Cities and Digital Government,
-        Paper 7.
-      </li>
-
-      <li>
-        <strong>
-          <a
-            href="https://doi.org/10.1007/978-3-031-73344-4_8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Development of an Image-Based Reverse Vending Machine Using
-            Raspberry Pi
-          </a>
-        </strong>.
-        2024.
-        <em>
-          Novel and Intelligent Digital Systems: Proceedings of the 4th
-          International Conference (NiDS 2024)
-        </em>,
-        Lecture Notes in Networks and Systems, Vol. 1170,
-        pp. 102&ndash;112.
-      </li>
-
-      <li>
-        <strong>
-          <a
-            href="https://doi.org/10.1016/j.procs.2024.03.184"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Automated Safe AWD Rice Irrigation Scheduling Using Low-Power WAN
-            Technology
-          </a>
-        </strong>.
-        2024. Seventh Information Systems International Conference
-        (ISICO 2023), <em>Procedia Computer Science</em>, Vol. 234,
-        pp. 1769&ndash;1776.
-      </li>
-
-      <li>
-        <strong>
-          <a
-            href="https://doi.org/10.1016/j.procs.2024.03.175"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Design and Development of a University Outdoor Air Quality
-            Monitoring System
-          </a>
-        </strong>.
-        2024. Seventh Information Systems International Conference
-        (ISICO 2023), <em>Procedia Computer Science</em>, Vol. 234,
-        pp. 1697&ndash;1704.
-      </li>
-
-      <li>
-        <strong>
-          <a
-            href="https://doi.org/10.1007/978-3-031-44097-7_17"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Exploring Smart City Analytical Framework: Evidence from Select
-            Case Studies
-          </a>
-        </strong>.
-        2023.
-        <em>
-          Novel and Intelligent Digital Systems: Proceedings of the 3rd
-          International Conference (NiDS 2023)
-        </em>,
-        Lecture Notes in Networks and Systems, Vol. 783,
-        pp. 164&ndash;175.
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-
-    <p>
-      Email:
-      <a href="mailto:d14949006@ntu.edu.tw">d14949006@ntu.edu.tw</a>
-      |
-      <a href="mailto:arbalce.25@gmail.com">arbalce.25@gmail.com</a>
-      <br />
-
-      Google Scholar:
-      <a
-        href="https://scholar.google.com/citations?hl=en&user=yhtYezIAAAAJ&view_op=list_works"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Profile Link
-      </a>
-      <br />
-
-      LinkedIn:
-      <a
-        href="https://www.linkedin.com/in/apple-rose-alce-1520/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Profile Link
-      </a>
-    </p>
-  </section>
-
-  <footer>
-    Last updated: September 2026
-  </footer>
+  <footer>Last updated: November 2026</footer>
 </body>
 </html>
